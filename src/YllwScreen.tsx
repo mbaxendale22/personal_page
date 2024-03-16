@@ -34,7 +34,7 @@ function YllwScreen() {
                         <p>Yllw provides<span style={{color: colors.splash}}> personalised insights</span> over time</p>
                     </div>
                 </section>
-                <section style={{textAlign: 'center', padding: '4rem'}}>
+                <section style={{textAlign: 'center', padding: '4rem 0rem', textWrap: 'balance'}}>
                     <TextRoot content={'Currently, Yllw is in closed beta testing'}/>
                     <TextRoot content={`If you're interested in gaining access please email`}/>
                     <a href="mailto:yllw_app@proton.me">yllw_app@proton.me</a>
