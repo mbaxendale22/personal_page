@@ -11,23 +11,31 @@ function PreviewCard({image}: { image: string }) {
     const navigate = useNavigate()
 
     return (
-        <div style={cardStyles.container} onClick={() => navigate('/yllw-app')}>
-            <div style={{...cardStyles.topCorner, backgroundColor: colors.mainBackground}}>
-                <div style={{...cardStyles.textContainer, backgroundColor: colors.neutral.shade500}}>
+        <div style={styles.container} onClick={() => navigate('/yllw-app')}>
+            <div style={{...styles.topCorner, backgroundColor: colors.mainBackground}}>
+                <div style={{...styles.textContainer, backgroundColor: colors.neutral.shade500}}>
                     <LabelText content={'Yllw'}/>
                 </div>
             </div>
-            <div style={{...cardStyles.leftCorner, boxShadow: boxShadowValue}}></div>
-            <div style={{...cardStyles.btmCorner, boxShadow: boxShadowValue}}></div>
-            <img style={cardStyles.image} src={image} alt={'sunny landscape with a few clouds in the sky'}/>
-            <div style={{...cardStyles.titleContainer, backgroundColor: colors.neutral.shade400}}>
+            <div style={{...styles.leftCorner, boxShadow: boxShadowValue}}></div>
+            <div style={{...styles.btmCorner, boxShadow: boxShadowValue}}></div>
+            <img style={styles.image} src={image} alt={'sunny landscape with a few clouds in the sky'}/>
+            <div style={{...styles.titleContainer, backgroundColor: colors.neutral.shade400}}>
                 <TextRoot content={'Yllw'}/>
+            </div>
+            <div style={styles.badgeContainer}>
+                <div style={{...styles.badge, backgroundColor: colors.neutral.shade500}}>
+                    <LabelText content={'Health & Wellness'} color={colors.primary} />
+                </div>
+                <div style={{...styles.badge, backgroundColor: colors.neutral.shade500}}>
+                    <LabelText content={'iOS & Android'} color={colors.accent}/>
+                </div>
             </div>
         </div>
     )
 }
 
-const cardStyles: Record<string, CSSProperties> = {
+const styles: Record<string, CSSProperties> = {
     container: {
         borderRadius: "1rem",
         height: 400,
@@ -85,6 +93,18 @@ const cardStyles: Record<string, CSSProperties> = {
         position: "absolute",
         top: '50%',
         left: '35%'
+    },
+    badgeContainer: {
+        position: 'absolute',
+        bottom: 5,
+        display: 'flex',
+        justifyContent: 'center',
+        gap: '1rem',
+        width: '100%',
+    },
+    badge: {
+        padding: '0.2rem 0.5rem',
+        borderRadius: '1rem'
     }
 }
 

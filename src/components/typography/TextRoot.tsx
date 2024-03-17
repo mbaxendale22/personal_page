@@ -6,7 +6,7 @@ function TextRoot({content, inputStyles}: { content: string, inputStyles?: Recor
     const additionalStyles = inputStyles ? inputStyles.main : {}
 
     return (
-        <div style={{...additionalStyles, color: colors.textPrimary}}>{content}</div>
+        <div style={{color: colors.textPrimary, ...additionalStyles}}>{content}</div>
     );
 }
 
