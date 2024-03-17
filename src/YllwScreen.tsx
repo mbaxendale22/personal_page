@@ -28,7 +28,7 @@ function YllwScreen() {
                     <Subtitle content={"This is Yllw"}/>
                     <div style={{color: colors.textPrimary}}>
                         <p>Yllw is a <span style={{color: colors.secondary}}> UTI Tracking App</span></p>
-                        <p>Yllw is <span style={{color: colors.primary}}> privacy-focused</span></p>
+                        <p>Yllw is <span style={{color: colors.primary, cursor: "pointer"}} onClick={() => navigate('/yllw-app/privacy')}> privacy-focused</span></p>
                         <p>Yllw helps people<span style={{color: colors.accent}}> track contributors</span> to their
                             symptoms</p>
                         <p>Yllw provides<span style={{color: colors.splash}}> personalised insights</span> over time</p>

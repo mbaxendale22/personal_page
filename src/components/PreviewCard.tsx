@@ -6,7 +6,8 @@ import TextRoot from "./typography/TextRoot.tsx";
 
 function PreviewCard({image}: { image: string }) {
     const {colors} = useContext(themeContext)
-    const boxShadowValue = `9px -12px 0 ${colors.mainBackground}`
+    // const boxShadowValue = `9px -12px 0 ${colors.mainBackground}`
+    const boxShadowValue = `10px -12px 0 ${colors.mainBackground}`
     const navigate = useNavigate()
 
     return (
@@ -29,8 +30,8 @@ function PreviewCard({image}: { image: string }) {
 const cardStyles: Record<string, CSSProperties> = {
     container: {
         borderRadius: "1rem",
-        height: 300,
-        width: 200,
+        height: 400,
+        width: 250,
         cursor: 'pointer',
         position: 'relative'
     },
@@ -57,9 +58,9 @@ const cardStyles: Record<string, CSSProperties> = {
         position: 'absolute',
         borderRadius: '50%',
         backgroundColor: "transparent",
-        height: 25,
-        width: 25,
-        left: 74,
+        height: 20,
+        width: 26,
+        left: 99,
     },
     btmCorner: {
         position: 'absolute',
@@ -73,7 +74,7 @@ const cardStyles: Record<string, CSSProperties> = {
     textContainer: {
         textAlign: 'center',
         margin: '0 auto',
-        width: 70,
+        width: 80,
         borderRadius: '1rem',
     },
 
@@ -83,7 +84,7 @@ const cardStyles: Record<string, CSSProperties> = {
         borderRadius: '1rem',
         position: "absolute",
         top: '50%',
-        left: '30%'
+        left: '35%'
     }
 }
 

@@ -5,6 +5,7 @@ import './index.css'
 import {ThemeProvider} from "./context/ThemeContext.tsx";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import YllwScreen from "./YllwScreen.tsx";
+import PrivacyScreen from "./PrivacyScreen.tsx";
 
 
 const router = createBrowserRouter([
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     {
         path: '/yllw-app',
         element: <YllwScreen/>
+    },
+    {
+        path: '/yllw-app/privacy',
+        element: <PrivacyScreen/>
     },
 
 
