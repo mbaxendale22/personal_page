@@ -38,7 +38,7 @@ function YllwScreen() {
                     <Headline content={"Hello"}/>
                     <Subtitle content={"This is a Privacy Policy"}/>
                     <div style={{color: colors.textPrimary}}>
-                        <BodyLarge content={'Below is the privacy policy for Yllw. The main takeaways are:'}/>
+                        <BodyLarge content={'The main takeaways are:'}/>
                         <p>Your data will NEVER be <span style={{color: colors.primary}}>shared</span> with third
                             party.</p>
                         <p>Your data will NEVER be <span style={{color: colors.secondary}}>sold</span> to a third
@@ -50,8 +50,6 @@ function YllwScreen() {
                     </div>
                 </section>
                 <section style={{padding: '1rem 0rem', textWrap: 'balance', color: colors.textPrimary}}>
-                    <p>This Privacy Policy governs the manner in which Yllw collects, uses, maintains and
-                        discloses information collected from users of the application.</p>
 
                     <h2>User Provided Information</h2>
                     <p>The app may collect personal information from users such as:</p>
