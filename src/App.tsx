@@ -36,6 +36,7 @@ const styles: Record<string, CSSProperties> = {
     },
     cardsSection: {
         paddingTop: '2rem',
+        flex: 1,
         alignSelf: 'center',
     },
 }

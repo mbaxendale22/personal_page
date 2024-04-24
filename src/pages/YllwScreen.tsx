@@ -49,7 +49,9 @@ function YllwScreen() {
                     <Subtitle content={'Guides'} />
                     <ul style={{ paddingTop: '1rem' }}>
                         <li style={{ paddingBottom: '0.5rem' }}>
-                            <a onClick={() => navigate('')}>How to use Yllw</a>
+                            <a onClick={() => navigate('/yllw-app/how-to')}>
+                                How to use Yllw
+                            </a>
                         </li>
                         <li>
                             <a onClick={() => navigate('/yllw-app/data')}>
@@ -62,7 +64,7 @@ function YllwScreen() {
                 <section
                     style={{
                         textAlign: 'center',
-                        padding: '4rem 0rem',
+                        padding: '6rem 0rem',
                         textWrap: 'balance',
                     }}
                 >

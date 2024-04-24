@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import YllwScreen from './pages/YllwScreen.tsx'
 import PrivacyScreen from './pages/PrivacyScreen.tsx'
 import YllwDataScreen from './pages/YllwDataScreen.tsx'
-
+import YllwHowToScreen from './pages/YllwHowToScreen.tsx'
 const router = createBrowserRouter([
     {
         path: '/',
@@ -24,6 +24,10 @@ const router = createBrowserRouter([
     {
         path: '/yllw-app/data',
         element: <YllwDataScreen />,
+    },
+    {
+        path: '/yllw-app/how-to',
+        element: <YllwHowToScreen />,
     },
 ])
 

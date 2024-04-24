@@ -7,7 +7,7 @@ import './yllwGuides.css'
 function YllwDataScreen() {
     return (
         <ScreenRoot>
-            <main className="main">
+            <main className="main" style={{ paddingTop: '1rem' }}>
                 <Subtitle content={'Import / Export Data'} />
                 <h2>Why do I need to export my data?</h2>
                 <p>
