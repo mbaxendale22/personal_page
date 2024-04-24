@@ -1,34 +1,73 @@
-import {CSSProperties, useContext} from "react";
-import themeContext from "../context/ThemeContext.tsx";
-import {useNavigate} from "react-router-dom";
-import LabelText from "./typography/LabelText.tsx";
-import TextRoot from "./typography/TextRoot.tsx";
+import { CSSProperties, useContext } from 'react'
+import themeContext from '../context/ThemeContext.tsx'
+import { useNavigate } from 'react-router-dom'
+import LabelText from './typography/LabelText.tsx'
+import TextRoot from './typography/TextRoot.tsx'
 
-function PreviewCard({image}: { image: string }) {
-    const {colors} = useContext(themeContext)
+function PreviewCard({ image }: { image: string }) {
+    const { colors } = useContext(themeContext)
     // const boxShadowValue = `9px -12px 0 ${colors.mainBackground}`
     const boxShadowValue = `10px -12px 0 ${colors.mainBackground}`
     const navigate = useNavigate()
 
     return (
         <div style={styles.container} onClick={() => navigate('/yllw-app')}>
-            <div style={{...styles.topCorner, backgroundColor: colors.mainBackground}}>
-                <div style={{...styles.textContainer, backgroundColor: colors.neutral.shade500}}>
-                    <LabelText content={'Yllw'}/>
+            <div
+                style={{
+                    ...styles.topCorner,
+                    backgroundColor: colors.mainBackground,
+                }}
+            >
+                <div
+                    style={{
+                        ...styles.textContainer,
+                        backgroundColor: colors.neutral.shade500,
+                    }}
+                >
+                    <LabelText content={'Yllw'} />
                 </div>
             </div>
-            <div style={{...styles.leftCorner, boxShadow: boxShadowValue}}></div>
-            <div style={{...styles.btmCorner, boxShadow: boxShadowValue}}></div>
-            <img style={styles.image} src={image} alt={'sunny landscape with a few clouds in the sky'}/>
-            <div style={{...styles.titleContainer, backgroundColor: colors.neutral.shade400}}>
-                <TextRoot content={'Yllw'}/>
+            <div
+                style={{ ...styles.leftCorner, boxShadow: boxShadowValue }}
+            ></div>
+            <div
+                style={{ ...styles.btmCorner, boxShadow: boxShadowValue }}
+            ></div>
+            <img
+                style={styles.image}
+                src={image}
+                alt={'sunny landscape with a few clouds in the sky'}
+            />
+            <div
+                style={{
+                    ...styles.titleContainer,
+                    backgroundColor: colors.neutral.shade400,
+                }}
+            >
+                <TextRoot content={'Yllw'} />
             </div>
             <div style={styles.badgeContainer}>
-                <div style={{...styles.badge, backgroundColor: colors.neutral.shade500}}>
-                    <LabelText content={'Health & Wellness'} color={colors.primary} />
+                <div
+                    style={{
+                        ...styles.badge,
+                        backgroundColor: colors.neutral.shade500,
+                    }}
+                >
+                    <LabelText
+                        content={'Health & Wellness'}
+                        color={colors.primary}
+                    />
                 </div>
-                <div style={{...styles.badge, backgroundColor: colors.neutral.shade500}}>
-                    <LabelText content={'iOS & Android'} color={colors.accent}/>
+                <div
+                    style={{
+                        ...styles.badge,
+                        backgroundColor: colors.neutral.shade500,
+                    }}
+                >
+                    <LabelText
+                        content={'iOS & Android'}
+                        color={colors.accent}
+                    />
                 </div>
             </div>
         </div>
@@ -37,16 +76,16 @@ function PreviewCard({image}: { image: string }) {
 
 const styles: Record<string, CSSProperties> = {
     container: {
-        borderRadius: "1rem",
-        height: 400,
+        borderRadius: '1rem',
+        height: 375,
         width: 250,
         cursor: 'pointer',
-        position: 'relative'
+        position: 'relative',
     },
     image: {
         maxWidth: '100%',
         height: '100%',
-        borderRadius: "1rem",
+        borderRadius: '1rem',
     },
     mask: {
         width: '100%',
@@ -65,7 +104,7 @@ const styles: Record<string, CSSProperties> = {
     leftCorner: {
         position: 'absolute',
         borderRadius: '50%',
-        backgroundColor: "transparent",
+        backgroundColor: 'transparent',
         height: 20,
         width: 26,
         left: 99,
@@ -73,7 +112,7 @@ const styles: Record<string, CSSProperties> = {
     btmCorner: {
         position: 'absolute',
         borderRadius: '50%',
-        backgroundColor: "transparent",
+        backgroundColor: 'transparent',
         height: 25,
         width: 25,
         right: 0,
@@ -90,9 +129,9 @@ const styles: Record<string, CSSProperties> = {
         textAlign: 'center',
         padding: '8px 24px',
         borderRadius: '1rem',
-        position: "absolute",
+        position: 'absolute',
         top: '50%',
-        left: '35%'
+        left: '35%',
     },
     badgeContainer: {
         position: 'absolute',
@@ -104,8 +143,8 @@ const styles: Record<string, CSSProperties> = {
     },
     badge: {
         padding: '0.2rem 0.5rem',
-        borderRadius: '1rem'
-    }
+        borderRadius: '1rem',
+    },
 }
 
 export default PreviewCard

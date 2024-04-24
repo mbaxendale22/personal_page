@@ -1,0 +1,19 @@
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.4);
+}
+
+.nav-item {
+    cursor: pointer;
+    color: #f5f5f5;
+    &:hover {
+        color: #88e2a9;
+    }
+
+    p {
+        margin: 0.5rem;
+    }
+}

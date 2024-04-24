@@ -1,5 +1,6 @@
 import React, { CSSProperties, useContext } from 'react'
 import themeContext from './context/ThemeContext.tsx'
+import NavBar from './components/Nav/NavBar.tsx'
 
 function ScreenRoot({ children }: { children: React.ReactNode }) {
     const { colors } = useContext(themeContext)
@@ -10,7 +11,10 @@ function ScreenRoot({ children }: { children: React.ReactNode }) {
                 backgroundColor: colors.mainBackground,
             }}
         >
-            <div style={styles.content}>{children}</div>
+            <div style={styles.content}>
+                <NavBar />
+                {children}
+            </div>
         </div>
     )
 }
@@ -28,6 +32,11 @@ const styles: Record<string, CSSProperties> = {
         margin: '0 auto',
         maxWidth: 1000,
         minHeight: '100%',
-        padding: '2rem',
+        padding: '1rem 2rem',
+    },
+    header: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        cursor: 'pointer',
     },
 }
