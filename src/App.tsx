@@ -1,5 +1,5 @@
 import Headline from './components/typography/Headline.tsx'
-import ScreenRoot from './ScreenRoot.tsx'
+import ScreenRoot from './pages/ScreenRoot.tsx'
 import Subtitle from './components/typography/Subtitle.tsx'
 import { CSSProperties } from 'react'
 import TextRoot from './components/typography/TextRoot.tsx'

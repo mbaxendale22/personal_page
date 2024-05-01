@@ -12,7 +12,7 @@ function NavBar() {
             <div onClick={() => navigate('/yllw-app')} className="nav-item">
                 <p>Yllw</p>
             </div>
-            <div onClick={() => navigate('/')} className="nav-item">
+            <div onClick={() => navigate('/me')} className="nav-item">
                 <p>Me</p>
             </div>
         </nav>

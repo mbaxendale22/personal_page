@@ -1,7 +1,7 @@
 import ScreenRoot from '../ScreenRoot'
-import Subtitle from '../components/typography/Subtitle'
-import idata from '../assets/gifs/import-data.gif'
-import edata from '../assets/gifs/export-data.gif'
+import Subtitle from '../../components/typography/Subtitle'
+import idata from '../../assets/gifs/import-data.gif'
+import edata from '../../assets/gifs/export-data.gif'
 import './yllwGuides.css'
 
 function YllwDataScreen() {

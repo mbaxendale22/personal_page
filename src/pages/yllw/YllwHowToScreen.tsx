@@ -1,9 +1,9 @@
 import ScreenRoot from '../ScreenRoot'
-import Subtitle from '../components/typography/Subtitle'
-import cycleTracking from '../assets/gifs/cycle-tracking.gif'
-import createLog from '../assets/gifs/short-log.gif'
-import calendarList from '../assets/gifs/calendar-list.gif'
-import dailyObservation from '../assets/gifs/observation.gif'
+import Subtitle from '../../components/typography/Subtitle'
+import cycleTracking from '../../assets/gifs/cycle-tracking.gif'
+import createLog from '../../assets/gifs/short-log.gif'
+import calendarList from '../../assets/gifs/calendar-list.gif'
+import dailyObservation from '../../assets/gifs/observation.gif'
 import './yllwGuides.css'
 function YllwHowToScreen() {
     return (

@@ -1,8 +1,8 @@
 import { CSSProperties, useContext } from 'react'
 import ScreenRoot from '../ScreenRoot.tsx'
-import Subtitle from '../components/typography/Subtitle.tsx'
-import themeContext from '../context/ThemeContext.tsx'
-import BodyLarge from '../components/typography/BodyLarge.tsx'
+import Subtitle from '../../components/typography/Subtitle.tsx'
+import themeContext from '../../context/ThemeContext.tsx'
+import BodyLarge from '../../components/typography/BodyLarge.tsx'
 
 function PrivacyScreen() {
     const { colors } = useContext(themeContext)

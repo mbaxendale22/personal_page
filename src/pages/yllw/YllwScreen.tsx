@@ -1,8 +1,8 @@
 import { CSSProperties, useContext } from 'react'
 import ScreenRoot from '../ScreenRoot.tsx'
-import Subtitle from '../components/typography/Subtitle.tsx'
-import TextRoot from '../components/typography/TextRoot.tsx'
-import themeContext from '../context/ThemeContext.tsx'
+import Subtitle from '../../components/typography/Subtitle.tsx'
+import TextRoot from '../../components/typography/TextRoot.tsx'
+import themeContext from '../../context/ThemeContext.tsx'
 import { useNavigate } from 'react-router-dom'
 
 function YllwScreen() {

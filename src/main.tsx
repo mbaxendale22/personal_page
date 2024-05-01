@@ -4,14 +4,19 @@ import App from './App.tsx'
 import './index.css'
 import { ThemeProvider } from './context/ThemeContext.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import YllwScreen from './pages/YllwScreen.tsx'
-import PrivacyScreen from './pages/PrivacyScreen.tsx'
-import YllwDataScreen from './pages/YllwDataScreen.tsx'
-import YllwHowToScreen from './pages/YllwHowToScreen.tsx'
+import YllwScreen from './pages/yllw/YllwScreen.tsx'
+import PrivacyScreen from './pages/yllw/PrivacyScreen.tsx'
+import YllwDataScreen from './pages/yllw/YllwDataScreen.tsx'
+import YllwHowToScreen from './pages/yllw/YllwHowToScreen.tsx'
+import IntroPage from './pages/intro/IntroPage.tsx'
 const router = createBrowserRouter([
     {
         path: '/',
         element: <App />,
+    },
+    {
+        path: '/me',
+        element: <IntroPage />,
     },
     {
         path: '/yllw-app',

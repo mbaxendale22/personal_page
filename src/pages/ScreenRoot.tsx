@@ -1,11 +1,11 @@
 import React, { CSSProperties, useContext } from 'react'
-import themeContext from './context/ThemeContext.tsx'
-import NavBar from './components/Nav/NavBar.tsx'
+import themeContext from '../context/ThemeContext.tsx'
+import NavBar from '../components/Nav/NavBar.tsx'
 
 function ScreenRoot({ children }: { children: React.ReactNode }) {
     const { colors } = useContext(themeContext)
     return (
-        <div
+        <main
             style={{
                 ...styles.container,
                 backgroundColor: colors.mainBackground,
@@ -15,7 +15,7 @@ function ScreenRoot({ children }: { children: React.ReactNode }) {
                 <NavBar />
                 {children}
             </div>
-        </div>
+        </main>
     )
 }
 
