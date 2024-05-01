@@ -42,6 +42,14 @@ function YllwScreen() {
                             </span>{' '}
                             to their symptoms
                         </p>
+                        <p>
+                            Yllw provides
+                            <span style={{ color: colors.splash }}>
+                                {' '}
+                                personalised insights
+                            </span>{' '}
+                            over time
+                        </p>
                     </div>
                 </section>
 
