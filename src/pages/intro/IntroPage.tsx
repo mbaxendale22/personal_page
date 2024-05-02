@@ -66,21 +66,6 @@ function IntroPage() {
                             Professional background
                         </p>
                     </div>
-                    <div
-                        style={styles.gridCell}
-                        onClick={() => handlePress('personal')}
-                    >
-                        <p
-                            style={{
-                                color:
-                                    displayType === 'personal'
-                                        ? kColors.accent
-                                        : 'white',
-                            }}
-                        >
-                            Personal background
-                        </p>
-                    </div>
 
                     <section>{displayContent()}</section>
                 </section>
@@ -110,7 +95,7 @@ const styles: Record<string, CSSProperties> = {
         display: 'flex',
         paddingTop: 32,
         paddingBottom: 16,
-        gap: 12,
+        gap: 48,
         justifyContent: 'center',
         flexWrap: 'wrap',
     },
